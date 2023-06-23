@@ -13,7 +13,7 @@ for (let i = 0; i < filters.length; i++) {
   filters[i].checked = true;
 }
 
-//soulslike filter
+// Soulslike filter
 let soulslikeFilter = document.getElementById("checkbox-soulslike");
 soulslikeFilter.onchange = function () {
   if (soulslikeFilter.checked === true) {
@@ -31,7 +31,7 @@ soulslikeFilter.onchange = function () {
   }
 };
 
-//rpg
+// RPG filter
 let rpgFilter = document.getElementById("checkbox-rpg");
 rpgFilter.onchange = function () {
   if (rpgFilter.checked === true) {
@@ -49,7 +49,7 @@ rpgFilter.onchange = function () {
   }
 };
 
-//action
+// Action filter
 let actionFilter = document.getElementById("checkbox-action");
 actionFilter.onchange = function () {
   if (actionFilter.checked === true) {
@@ -66,3 +66,35 @@ actionFilter.onchange = function () {
     }
   }
 };
+
+function changeProduct() {
+  let select = document.getElementById("prijs");
+  let selectedOption = select.options[select.selectedIndex].text;
+
+  let games = document.getElementsByClassName("games__game");
+
+  // Loop through all the games and show/hide based on the selected price range
+  for (let i = 0; i < games.length; i++) {
+    let game = games[i];
+    let priceElement = game.querySelector(".games__h2");
+
+    if (priceElement) {
+      let price = parseFloat(priceElement.innerText.replace("€", ""));
+
+      // Show the game if it falls within the selected price range
+      if (selectedOption === "Prijs" || isPriceInRange(selectedOption, price)) {
+        game.style.display = "block";
+      } else {
+        game.style.display = "none";
+      }
+    }
+  }
+}
+
+function isPriceInRange(range, price) {
+  let rangeValues = range.split("-");
+  let minPrice = parseFloat(rangeValues[0].replace("€", ""));
+  let maxPrice = parseFloat(rangeValues[1].replace("€", ""));
+
+  return price >= minPrice && price <= maxPrice;
+}

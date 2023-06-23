@@ -811,6 +811,16 @@ s {
   background: grey;
 }
 
+.specs-container {
+  display: flex;
+}
+
+.specs-group {
+  flex: 1;
+  margin-right: 20px;
+}
+
+
 .specs {
   display: flex;
   font-size: 1.5rem;

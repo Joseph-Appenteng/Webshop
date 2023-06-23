@@ -1,0 +1,137 @@
+{
+    "games": [
+      {
+        "category": "soulslike",
+        "title": "IRONMAN-MARVEL",
+        "image": "img/demon-s-souls-remake-edition-remake-edition-pc-spel-cover.webp",
+        "price": {
+          "original": "€70",
+          "discounted": "€65.99"
+        },
+        "name": "Demon's Souls Remake",
+        "rating": "★★★★★",
+        "button": "Add to Cart"
+      },
+      {
+        "category": "rpg",
+        "title": "IRONMAN-MARVEL",
+        "image": "img/the-witcher-3-wild-hunt-pc-spel-gog-com-cover.webp",
+        "price": {
+          "original": "€50",
+          "discounted": "€11.49"
+        },
+        "name": "The Witcher 3: Wild Hunt",
+        "rating": "★★★★★",
+        "button": "Add to Cart"
+      },
+      {
+        "category": "action",
+        "title": "IRONMAN-MARVEL",
+        "image": "img/resident-evil-4-pc-spel-steam-europe-cover.webp",
+        "price": {
+          "original": "€59",
+          "discounted": "€40.99"
+        },
+        "name": "Resident Evil 4 Remake",
+        "rating": "★★★★★",
+        "button": "Add to Cart"
+      },
+      {
+        "category": "rpg",
+        "title": "IRONMAN-MARVEL",
+        "image": "img/star-wars-jedi-survivor-pc-spel-origin-cover.webp",
+        "price": {
+          "original": "€70",
+          "discounted": "€46.10"
+        },
+        "name": "Star Wars Jedi: Survivor",
+        "rating": "★★★★★",
+        "button": "Add to Cart"
+      },
+      {
+        "category": "soulslike",
+        "title": "STARWARSDarthVaderCharm",
+        "image": "img/elden-ring-pc-spel-steam-europe-cover.webp",
+        "price": {
+          "original": "€70",
+          "discounted": "€52.65"
+        },
+        "name": "Elden Ring",
+        "rating": "★★★★★",
+        "button": "Add to Cart"
+      },
+      {
+        "category": "rpg",
+        "title": "IRONMAN-MARVEL",
+        "image": "img/hogwarts-legacy-pc-spel-steam-europe-cover.webp",
+        "price": {
+          "original": "€60",
+          "discounted": "€47.15"
+        },
+        "name": "Hogwarts Legacy",
+        "rating": "★★★★★",
+        "button": "Add to Cart"
+      },
+      {
+        "category": "action",
+        "title": "STARWARSDarthVaderCharm",
+        "image": "img/street-fighter-6-pc-spel-steam-cover.webp",
+        "price": {
+          "original": "€59",
+          "discounted": "€50.99"
+        },
+        "name": "Street Fighter 6",
+        "rating": "★★★★★",
+        "button": "Add to Cart"
+      },
+      {
+        "category": "soulslike",
+        "title": "STARWARSDarthVaderCharm",
+        "image": "img/sekiro-shadows-die-twice-goty-edition-goty-edition-pc-spel-steam-europe-cover.webp",
+        "price": {
+          "original": "€60",
+          "discounted": "€33.33"
+        },
+        "name": "Sekiro: Shadows Die Twice",
+        "rating": "★★★★★",
+        "button": "Add to Cart"
+      },
+      {
+        "category": "action",
+        "title": "STARWARSDarthVaderCharm",
+        "image": "img/mortal-kombat-1-pc-spel-steam-europe-cover.webp",
+        "price": {
+          "original": "€70",
+          "discounted": "€57.49"
+        },
+        "name": "Mortal Kombat 1",
+        "rating": "★★★★★",
+        "button": "Add to Cart"
+      },
+      {
+        "category": "soulslike",
+        "title": "STARWARSDarthVaderCharm",
+        "image": "img/lies-of-p-pc-spel-steam-cover.webp",
+        "price": {
+          "original": "€70",
+          "discounted": "€60.19"
+        },
+        "name": "Lies Of P",
+        "rating": "★★★★★",
+        "button": "Add to Cart"
+      },
+      {
+        "category": "action",
+        "title": "STARWARSDarthVaderCharm",
+        "image": "img/marvel-s-spider-man-miles-morales-pc-spel-steam-cover.webp",
+        "price": {
+          "original": "€50",
+          "discounted": "€29.89"
+        },
+        "name": "Marvels Spider-Man: Miles Morales",
+        "rating": "★★★★★",
+        "button": "Add to Cart"
+      }
+    ]
+  }
+  

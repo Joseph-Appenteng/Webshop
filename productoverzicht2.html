@@ -49,26 +49,19 @@
       </nav>
     </header>
 
-    <h1><i class="fab fa-steam"></i>Steam Games</h1>
+    <h1><i class="fab fa-playstation"></i>Playstation 5 Games</h1>
     
     <main>
      <p class="filt">Filteren  <i class="fas fa-filter"></i></p>
-      <section class="inputs">
-        <div>
-          <input id="checkbox-soulslike" type="checkbox" class="filter" />
-          <label for="checkbox-soulslike" class="label">Soulslike</label>
-        </div>
-
-        <div>
-          <input id="checkbox-rpg" type="checkbox" class="filter" />
-          <label for="checkbox-rpg" class="label">RPG</label>
-        </div>
-
-        <div>
-          <input id="checkbox-action" type="checkbox" class="filter" />
-          <label for="checkbox-action" class="label">Action</label>
-        </div>
-      </section>
+     <select id="prijs" onchange="changeProduct()">
+        <option>Prijs</option>
+        <option>€10 - €30</option>
+        <option>€30 - €50</option>
+        <option>€50 - €70</option>
+      </select>
+      
+      
+     
       <ul class="games">
         <li data-category="soulslike" data-title="IRONMAN-MARVEL" class="games__game game">
             <figure class="games__figure">
