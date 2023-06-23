@@ -52,14 +52,112 @@ body {
   padding-left: 5rem;
 }
 
-.searchBar__glass  {
+.searchBar__glass {
   width: 6rem;
   height: 2rem;
   display: flex !important;
-  justify-content: center ;
-  align-items: center ;
-  position: absolute ;
-  top: 1.3rem ;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1.3rem;
+}
+
+/*shoppingCart*/
+
+.checkout {
+  padding: 2rem;
+  width: 80%;
+  height: 100%;
+  background: var(--game--background--color);
+  display: none;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.checkout__list {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(3.5, 30rem 20rem);
+}
+
+.checkout__listItem {
+  list-style: none;
+  grid-row: span 2;
+  border-bottom: 0.3rem solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkout__image {
+  height: 50%;
+  width: 50%;
+  object-fit: contain;
+}
+
+.modal {
+  width: 50rem;
+  height: 30rem;
+  position: absolute;
+  position: fixed;
+  top: 20% ;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  background: #f6f6f6;
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.3);
+  color: green;
+  font-size: 130%;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  left:34% ;
+  display: none;
+  z-index: 1;
+}
+
+.shoppingCart {
+  position: relative;
+  color: black;
+  border: 2px solid black;
+  background-color: var(--game--background--color);
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.shoppingCart:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.shoppingCart__message {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: -1rem;
+  left: 5.4rem;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.fa-arrow-left {
+  display: none;
+}
+
+.fa-cart-shopping {
+  display: inline-block;
+}
+
+.a-popup{
+  animation-name: popup;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /*nav bar*/
@@ -85,8 +183,8 @@ body {
   cursor: pointer;
 }
 
-
-.user-login-icon ,.user-login  {
+.user-login-icon,
+.user-login {
   color: black;
   border: 2px solid black;
   background-color: var(--game--background--color);
@@ -95,7 +193,8 @@ body {
   cursor: pointer;
 }
 
-.user-login-icon:hover,.user-login:hover {
+.user-login-icon:hover,
+.user-login:hover {
   background-color: lightgray;
 }
 
@@ -119,7 +218,7 @@ body {
 
 /*sidemenu popup*/
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -459,9 +558,9 @@ p span {
   left: 143rem;
 }
 
-li[data-title="STARWARSDarthVaderCharm"]:nth-child(4),
-li[data-title="STARWARSDarthVaderCharm"]:nth-child(5),
-li[data-title="STARWARSDarthVaderCharm"]:nth-child(6) {
+li[data-title="STARWARS-JEDI-SURVIVOR"]:nth-child(4),
+li[data-title="ELDEN-RING"]:nth-child(5),
+li[data-title="MORTAL=KOMBAT1"]:nth-child(6) {
   display: none;
 }
 
@@ -820,7 +919,6 @@ s {
   margin-right: 20px;
 }
 
-
 .specs {
   display: flex;
   font-size: 1.5rem;
@@ -847,7 +945,6 @@ h3 {
   margin: 0;
   margin-left: 3rem;
 }
-
 
 @keyframes away {
   from {
@@ -878,26 +975,54 @@ h3 {
   }
 }
 
-@media screen and (max-width:81.25rem) {
+@media screen and (max-width: 62.5rem) {
+
+  .checkout {
+    width: 100%;
+  }
+
+  .checkout__list {
+    grid-template-rows: repeat(3, 40rem 25rem);
+  }
+
+  .checkout__listItem {
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+  }
+
+  .checkout__image {
+    height: 40%;
+    width: 100%;
+  }
+  .a-popup {
+    animation-name: "broken";
+    animation-duration: 0s;
+  }
+}
+
+
+@media screen and (max-width: 81.25rem) {
   .searchBar {
     position: relative;
   }
-  
+
   .searchBar__input {
     border: none;
     width: 120%;
     padding: 1rem;
     padding-left: 5rem;
   }
-  
-  .searchBar__glass  {
+
+  .searchBar__glass {
     width: 6rem;
     height: 2rem;
     display: flex !important;
-    justify-content: center ;
-    align-items: center ;
-    position: absolute ;
-    top: 1.3rem ;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1.3rem;
   }
 
   .container {
@@ -907,22 +1032,21 @@ h3 {
     top: -4rem;
     transform: translateX(-77.6rem);
   }
-  
+
   /*nav bar*/
-  
+
   .header {
     width: 124.8rem;
   }
-  .user-login{
-    margin-left:6rem;
+  .user-login {
+    margin-left: 6rem;
     padding: 1.5rem;
   }
-  
+
   .user-login-icon {
     border-radius: 50%;
     padding: 1.5rem;
   }
-  
 
   .menu-icon {
     position: relative;
@@ -940,23 +1064,22 @@ h3 {
     font-size: 3rem;
   }
 
-  .container ul li, .container ul li a  {
+  .container ul li,
+  .container ul li a {
     font-size: 2rem;
   }
 
   .home {
-     width: 125rem;
+    width: 125rem;
   }
 
   .home .home-bg h1 {
     font-size: 2rem;
   }
-  
-  .home .home-bg p, .btn {
+
+  .home .home-bg p,
+  .btn {
     font-size: 1.7rem;
     margin-bottom: 2rem;
   }
- 
 }
-
-

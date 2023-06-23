@@ -47,11 +47,11 @@ body::after {
   z-index: 2;
 }
 
-h1{
+h1 {
   padding: 2rem 0rem 0rem 8rem;
 }
 
-select{
+select {
   margin-bottom: 2rem;
   font-size: 2rem;
 }
@@ -66,7 +66,7 @@ main {
   padding: 8rem;
 }
 
-.filt{
+.filt {
   font-size: 2rem;
   padding-bottom: 3rem;
 }
@@ -88,14 +88,14 @@ main {
   padding-left: 5rem;
 }
 
-.searchBar__glass  {
+.searchBar__glass {
   width: 6rem;
   height: 2rem;
   display: flex !important;
-  justify-content: center ;
-  align-items: center ;
-  position: absolute ;
-  top: 1.3rem ;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1.3rem;
 }
 
 /*nav bar*/
@@ -121,8 +121,8 @@ main {
   cursor: pointer;
 }
 
-
-.user-login-icon ,.user-login  {
+.user-login-icon,
+.user-login {
   color: black;
   border: 2px solid black;
   background-color: var(--game--background--color);
@@ -131,7 +131,8 @@ main {
   cursor: pointer;
 }
 
-.user-login-icon:hover,.user-login:hover {
+.user-login-icon:hover,
+.user-login:hover {
   background-color: lightgray;
 }
 
@@ -156,7 +157,7 @@ main {
 
 /*sidemenu popup*/
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -259,7 +260,6 @@ a{
   display: none;
 }
 
-
 .inputs {
   display: flex;
   align-items: center;
@@ -302,7 +302,7 @@ a{
   text-decoration: underline;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
@@ -315,7 +315,6 @@ button{
 
 .games__game {
   list-style: none;
-
   border-radius: 0.5rem;
   transition: 0.8s opacity;
   border-bottom: 0.5rem solid black;
@@ -513,7 +512,6 @@ a {
     transform: scaleX(0);
   }
 }
-
 
 @keyframes popup {
   from {

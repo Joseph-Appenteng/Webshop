@@ -17,6 +17,73 @@
 </head>
 
 <body>
+  <section id="js--checkoutWindow" class="checkout a-popup">
+    <ul class="checkout__list">
+      <li class="checkout__listItem">
+        <img
+          src="img/elden-ring-pc-spel-steam-europe-cover.webp"
+          alt="Pandora sieraad van Buzz Lightyear"
+          class="checkout__image"
+        />
+        <p class="checkout__title">Elden Ring Standard - Edition</p>
+        <p id="js--amount-elden" class="checkout__amount"></p>
+        <p id="js--prijs-elden" class="checkout__amount"></p>
+      </li>
+      <li class="checkout__listItem">
+        <img
+          src="img/hogwarts-legacy-pc-spel-steam-europe-cover.webp"
+          alt="Pandora sieraad van Ironman"
+          class="checkout__image"
+        />
+        <p class="checkout__title">Hogwarts-Legacy Standard Edition</p>
+        <p id="js--amount-hogwarts" class="checkout__amount"></p>
+        <p id="js--prijs-hogwarts" class="checkout__amount"></p>
+      </li>
+      <li class="checkout__listItem">
+        <img
+          src="img/resident-evil-4-pc-spel-steam-europe-cover.webp"
+          alt="Pandora sieraad van C3PO"
+          class="checkout__image"
+        />
+        <p class="checkout__title">Resident Evil 4 Remake</p>
+        <p id="js--amount-resident" class="checkout__amount"></p>
+        <p id="js--prijs-resident" class="checkout__amount"></p>
+      </li>
+      <li class="checkout__listItem">
+        <img
+          src="img/star-wars-jedi-survivor-pc-spel-origin-cover.webp"
+          alt="Pandora sieraad van C3PO"
+          class="checkout__image"
+        />
+        <p class="checkout__title">Star Wars Jedi Survivor</p>
+        <p id="js--amount-star" class="checkout__amount"></p>
+        <p id="js--prijs-star" class="checkout__amount"></p>
+      </li>
+      <li class="checkout__listItem">
+        <img
+          src="img/street-fighter-6-pc-spel-steam-cover.webp"
+          alt="Pandora sieraad van C3PO"
+          class="checkout__image"
+        />
+        <p class="checkout__title">Street Fighter 6</p>
+        <p id="js--amount-street" class="checkout__amount"></p>
+        <p id="js--prijs-street" class="checkout__amount"></p>
+      </li>
+      <li class="checkout__listItem">
+        <img
+          src="img/mortal-kombat-1-pc-spel-steam-europe-cover.webp"
+          alt="Pandora sieraad van C3PO"
+          class="checkout__image"
+        />
+        <p class="checkout__title">Mortal Kombat 1</p>
+        <p id="js--amount-mortal" class="checkout__amount"></p>
+        <p id="js--prijs-mortal" class="checkout__amount"></p>
+      </li>
+    </ul>
+  </section>
+  <article class="modal a-popup" id="js--shoppinModal">
+    ✓ Added to Cart
+  </article>
 
   <input type="checkbox" name="" id="check">
   <div class="container">
@@ -50,8 +117,10 @@
         <span class="user-login">
           <i class="fas fa-user"></i>
         </span>
-        <span class="user-login-icon">
+        <span id="js--checkoutButton" class="shoppingCart">
           <i class="fas fa-shopping-cart"></i>
+          <i class="fa-sharp fa-solid fa-arrow-left"></i>
+    <div class="shoppingCart__message">0</div>
         </span>
       </nav>
     </header>
@@ -79,7 +148,7 @@
         <i class="fa-solid fa-circle-arrow-right"></i> </button>
       <h1>Top Trending Games</h1>
       <ul class="games">
-        <li data-title="BUZZLIGHTYEAR-PIXAR" class="games__game">
+        <li data-title="HOGWARTS-LEGACY" class="games__game">
           <figure class="games__figure">
             <img src="img/hogwarts-legacy-pc-spel-steam-europe-cover.webp" alt="Pandora sieraad van Buzz Lightyear"
               class="games__img" />
@@ -89,12 +158,12 @@
             <h2 class="games__h2">€41.88</h2>
             <h3 class="games__h3">Hogwarts Legacy</h3>
             <div class="games__stars">★★★★★</div>
-            <button data-product="buzz" class="games__button">
+            <button data-product="hogwarts" class="games__button">
               Add to Cart
             </button>
           </section>
         </li>
-        <li data-title="IRONMAN-MARVEL" class="games__game">
+        <li data-title="RESIDENT-EVIL" class="games__game">
           <figure class="games__figure">
             <img src="img/resident-evil-4-pc-spel-steam-europe-cover.webp" alt="Pandora sieraad van Ironman - Marvel"
               class="games__img" />
@@ -104,12 +173,12 @@
             <h2 class="games__h2">€40.99</h2>
             <h3 class="games__h3">Resident Evil 4 Remake</h3>
             <div class="games__stars">★★★★★</div>
-            <button data-product="ironman" class="games__button">
+            <button data-product="resident" class="games__button">
               Add to Cart
             </button>
           </section>
         </li>
-        <li data-title="STARWARSDarthVaderCharm" class="games__game">
+        <li data-title="STREET-FIGHTER6" class="games__game">
           <figure class="games__figure">
             <a href="product2.html"><img src="img/street-fighter-6-pc-spel-steam-cover.webp"
                 alt="Pandora sieraad van C3PO - Star Wars" class="games__img"></a>
@@ -119,12 +188,12 @@
             <h2 class="games__h2">€50.99</h2>
             <h3 class="games__h3">Street Fighter 6</h3>
             <div class="games__stars">★★★★★</div>
-            <button data-product="darth" class="games__button">
+            <button data-product="street" class="games__button">
               Add to Cart
             </button>
           </section>
         </li>
-        <li data-title="STARWARSDarthVaderCharm" class="games__game">
+        <li data-title="STARWARS-JEDI-SURVIVOR" class="games__game">
           <figure class="games__figure">
             <img src="img/star-wars-jedi-survivor-pc-spel-origin-cover.webp" alt="Pandora sieraad van C3PO - Star Wars"
               class="games__img" />
@@ -134,12 +203,12 @@
             <h2 class="games__h2">€47.44</h2>
             <h3 class="games__h3">Star Wars Jedi Survivor</h3>
             <div class="games__stars">★★★★★</div>
-            <button data-product="darth" class="games__button">
+            <button data-product="star" class="games__button">
               Add to Cart
             </button>
           </section>
         </li>
-        <li data-title="STARWARSDarthVaderCharm" class="games__game">
+        <li data-title="ELDEN-RING" class="games__game">
           <figure class="games__figure">
             <a href="product1.html"><img src="img/elden-ring-pc-spel-steam-europe-cover.webp"
                 alt="Pandora sieraad van C3PO - Star Wars" class="games__img"></a>
@@ -149,12 +218,12 @@
             <h2 class="games__h2">€52.65</h2>
             <h3 class="games__h3">Elden Ring</h3>
             <div class="games__stars">★★★★★</div>
-            <button data-product="darth" class="games__button">
+            <button data-product="elden" class="games__button">
               Add to Cart
             </button>
           </section>
         </li>
-        <li data-title="STARWARSDarthVaderCharm" class="games__game">
+        <li data-title="MORTAL=KOMBAT1" class="games__game">
           <figure class="games__figure">
             <img src="img/mortal-kombat-1-pc-spel-steam-europe-cover.webp" alt="Pandora sieraad van C3PO - Star Wars"
               class="games__img" />
@@ -164,7 +233,7 @@
             <h2 class="games__h2">€57.49</h2>
             <h3 class="games__h3">Mortal Kombat 1</h3>
             <div class="games__stars">★★★★★</div>
-            <button data-product="darth" class="games__button">
+            <button data-product="mortal" class="games__button">
               Add to Cart
             </button>
         </li>

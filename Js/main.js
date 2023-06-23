@@ -151,4 +151,112 @@ function changeProductImage2() {
   }
 }
 
-//img/street-fighter-6-ultimate-edition-ultimate-edition-pc-spel-steam-cover.webp//
+// Selecteer alle knoppen met de class "games__button"
+const addToCartButtons = document.getElementsByClassName("games__button");
+// Variabele om het aantal items in de winkelwagen bij te houden
+let cartMessage = 0;
+// Selecteer het element waar het winkelwagenbericht wordt weergegeven
+const cartMessageValue = document.getElementsByClassName("shoppingCart__message")[0];
+// Selecteer het modaal venster element
+const shoppinModal = document.getElementById("js--shoppinModal");
+// Variabele om bij te houden of het modaal venster open is of niet
+let modalIsOpen = false;
+// Variabelen om bij te houden hoeveel items van elke soort in de winkelwagen zijn
+let elden = 0;
+let hogwarts = 0;
+let resident = 0;
+let star = 0;
+let street = 0;
+let mortal = 0;
+
+// Voeg klikgebeurtenissen toe aan de "addToCart" knoppen
+for (let i = 0; i < addToCartButtons.length; i++) {
+  addToCartButtons[i].onclick = function () {
+    // Verhoog het aantal items in de winkelwagen
+    cartMessage += 1;
+    // Update de weergave van het winkelwagenbericht op de pagina
+    cartMessageValue.innerHTML = cartMessage;
+    
+    // Bepaal welk product is toegevoegd op basis van de dataset van de geklikte knop
+    switch (addToCartButtons[i].dataset.product) {
+      case "elden":
+        elden += 1;
+        break;
+      case "hogwarts":
+        hogwarts += 1;
+        break;
+      case "resident":
+        resident += 1;
+        break;
+      case "star":
+        star += 1;
+        break;
+      case "street":
+        street += 1;
+        break;
+      case "mortal":
+        mortal += 1;
+        break;
+    }
+
+    // Als het modaal venster nog niet geopend is, open het dan en sluit het na 2 seconden
+    if (modalIsOpen === false) {
+      shoppinModal.style.display = "flex";
+      modalIsOpen = true;
+      setTimeout(function () {
+        shoppinModal.style.display = "none";
+        modalIsOpen = false;
+      }, 2000);
+    }
+  };
+}
+
+// Verberg het linkerpijlsymbool
+document.getElementsByClassName("fa-arrow-left")[0].style.display = "none";
+
+// Selecteer de "checkout" knop
+const checkoutButton = document.getElementById("js--checkoutButton");
+// Selecteer het afrekenvenster
+const checkoutWindow = document.getElementById("js--checkoutWindow");
+// Variabele om bij te houden of het afrekenvenster open is of niet
+let checkoutIsOpen = false;
+
+// Klikgebeurtenis voor de "checkout" knop
+checkoutButton.onclick = function () {
+  // Als het afrekenvenster nog niet geopend is, open het dan
+  if (checkoutIsOpen === false) {
+    document.querySelector("main").style.display = "none";
+    document.getElementsByClassName("fa-arrow-left")[0].style.display = "block";
+    document.querySelector(".container").style.display = "none";
+    checkoutWindow.style.display = "block";
+    checkoutIsOpen = true;
+    document.getElementsByClassName("fa-arrow-left")[0].style.display = "block";
+    document.getElementById("js--amount-elden").innerHTML = elden + "x";
+    document.getElementById("js--prijs-elden").innerHTML = "€" + elden * 52;
+    document.getElementById("js--amount-hogwarts").innerHTML = hogwarts + "x";
+    document.getElementById("js--amount-resident").innerHTML = resident + "x";
+    document.getElementById("js--amount-star").innerHTML = star + "x";
+    document.getElementById("js--amount-street").innerHTML = street + "x";
+    document.getElementById("js--amount-mortal").innerHTML = mortal + "x";
+    document.getElementById("js--prijs-hogwarts").innerHTML = "€" + hogwarts * 41;
+    document.getElementById("js--prijs-resident").innerHTML = "€" + resident * 40;
+    document.getElementById("js--prijs-star").innerHTML = "€" + star * 47;
+    document.getElementById("js--prijs-street").innerHTML = "€" + street * 50;
+    document.getElementById("js--prijs-mortal").innerHTML = "€" + mortal * 57;
+    document.getElementsByClassName("fa-cart-shopping")[0].style.display =
+      "none";
+    document.getElementsByClassName("searchBar__glass")[0].style.display =
+      "none";
+    return;
+  }
+  // Als het afrekenvenster al geopend is, sluit het dan
+  document.getElementsByClassName("fa-arrow-left")[0].style.display = "none";
+  document.querySelector("main").style.display = "block";
+  checkoutWindow.style.display = "none";
+  checkoutIsOpen = false;
+  searchBar.style.display = "block";
+  document.getElementsByClassName("fa-cart-shopping")[0].style.display =
+    "block";
+  document.getElementsByClassName("searchBar__glass")[0].style.display = "flex";
+};
+

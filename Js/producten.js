@@ -67,6 +67,7 @@ actionFilter.onchange = function () {
   }
 };
 
+//prijs filter//
 function changeProduct() {
   let select = document.getElementById("prijs");
   let selectedOption = select.options[select.selectedIndex].text;
