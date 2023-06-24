@@ -64,6 +64,12 @@ body {
 
 /*shoppingCart*/
 
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .checkout {
   padding: 2rem;
   width: 80%;
@@ -101,8 +107,8 @@ body {
   height: 30rem;
   position: absolute;
   position: fixed;
-  top: 20% ;
-  display: flex ;
+  top: 20%;
+  display: flex;
   justify-content: center;
   align-items: center;
   background: #f6f6f6;
@@ -111,7 +117,7 @@ body {
   font-size: 130%;
   font-weight: 400;
   border-radius: 0.5rem;
-  left:34% ;
+  left: 34%;
   display: none;
   z-index: 1;
 }
@@ -124,6 +130,15 @@ body {
   border-radius: 50%;
   padding: 15px;
   cursor: pointer;
+}
+
+.fa-arrow-left {
+  position: fixed;
+  padding: 3rem;
+  cursor: pointer;
+  color: black;
+  background: red;
+  border-radius: 50%;
 }
 
 .shoppingCart:hover {
@@ -153,7 +168,7 @@ body {
   display: inline-block;
 }
 
-.a-popup{
+.a-popup {
   animation-name: popup;
   animation-duration: 0.8s;
   animation-fill-mode: both;
@@ -976,7 +991,6 @@ h3 {
 }
 
 @media screen and (max-width: 62.5rem) {
-
   .checkout {
     width: 100%;
   }
@@ -1001,7 +1015,6 @@ h3 {
     animation-duration: 0s;
   }
 }
-
 
 @media screen and (max-width: 81.25rem) {
   .searchBar {

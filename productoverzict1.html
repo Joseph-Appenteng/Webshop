@@ -1,18 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Filter</title>
-    <link rel="stylesheet" href="css/style1.css" />
-    <script src="Js/main.js" defer></script>
-    <script src="Js/main.json" defer></script>
-    <script src="Js/producten.js" defer></script>
-    <script src="Js/kit.fontawesome.com_845fef67b3.js"></script>
-  </head>
-  <body>
-    <input type="checkbox" name="" id="check" class="check">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filter</title>
+  <link rel="stylesheet" href="css/style1.css" />
+  <script src="Js/producten.js" defer></script>
+  <script src="Js/kit.fontawesome.com_845fef67b3.js"></script>
+</head>
+
+<body>
+  <section id="js--checkoutWindow" class="checkout a-popup">
+    <h3>Winkelwagen<i class="fas fa-shopping-cart"></i></h3>
+    <i class="fa-sharp fa-solid fa-arrow-left shoppingCart"></i>
+    <ul class="checkout__list">
+      <li class="checkout__listItem">
+        <img src="img/elden-ring-pc-spel-steam-europe-cover.webp" alt="Pandora sieraad van Buzz Lightyear"
+          class="checkout__image" />
+        <p class="checkout__title">Elden Ring Standard - Edition</p>
+        <p id="js--amount-elden" class="checkout__amount"></p>
+        <p id="js--prijs-elden" class="checkout__amount"></p>
+      </li>
+      <li class="checkout__listItem">
+        <img src="img/hogwarts-legacy-pc-spel-steam-europe-cover.webp" alt="Pandora sieraad van Ironman"
+          class="checkout__image" />
+        <p class="checkout__title">Hogwarts-Legacy Standard Edition</p>
+        <p id="js--amount-hogwarts" class="checkout__amount"></p>
+        <p id="js--prijs-hogwarts" class="checkout__amount"></p>
+      </li>
+      <li class="checkout__listItem">
+        <img src="img/resident-evil-4-pc-spel-steam-europe-cover.webp" alt="Pandora sieraad van C3PO"
+          class="checkout__image" />
+        <p class="checkout__title">Resident Evil 4 Remake</p>
+        <p id="js--amount-resident" class="checkout__amount"></p>
+        <p id="js--prijs-resident" class="checkout__amount"></p>
+      </li>
+      <li class="checkout__listItem">
+        <img src="img/star-wars-jedi-survivor-pc-spel-origin-cover.webp" alt="Pandora sieraad van C3PO"
+          class="checkout__image" />
+        <p class="checkout__title">Star Wars Jedi Survivor</p>
+        <p id="js--amount-star" class="checkout__amount"></p>
+        <p id="js--prijs-star" class="checkout__amount"></p>
+      </li>
+      <li class="checkout__listItem">
+        <img src="img/street-fighter-6-pc-spel-steam-cover.webp" alt="Pandora sieraad van C3PO"
+          class="checkout__image" />
+        <p class="checkout__title">Street Fighter 6</p>
+        <p id="js--amount-street" class="checkout__amount"></p>
+        <p id="js--prijs-street" class="checkout__amount"></p>
+      </li>
+      <li class="checkout__listItem">
+        <img src="img/mortal-kombat-1-pc-spel-steam-europe-cover.webp" alt="Pandora sieraad van C3PO"
+          class="checkout__image" />
+        <p class="checkout__title">Mortal Kombat 1</p>
+        <p id="js--amount-mortal" class="checkout__amount"></p>
+        <p id="js--prijs-mortal" class="checkout__amount"></p>
+      </li>
+    </ul>
+  </section>
+  <article class="modal a-popup" id="js--shoppinModal">
+    ✓ Added to Cart
+  </article>
+  <input type="checkbox" name="" id="check" class="check">
   <div class="container">
     <label for="check">
       <span class="fas fa-times" id="times"></span>
@@ -21,259 +72,274 @@
     <div class="head"><img src="img/wepik-green-blue-and-yellow-gaming-logo-20230523111243ZQWB.webp" alt=""></div>
     <ul>
       <p>PC GAMES</p>
-      <a href="productoverzict1.html"><li><i class="fab fa-steam"></i>Steam</li></a>
-      <a href="productoverzict1.html"><li><i class="fas fa-desktop"></i>Epic Games</li></a>
+      <a href="productoverzict1.html">
+        <li><i class="fab fa-steam"></i>Steam</li>
+      </a>
+      <a href="productoverzict1.html">
+        <li><i class="fas fa-desktop"></i>Epic Games</li>
+      </a>
       <p>PLAYSATION GAMES</p>
-      <a href="productoverzicht2.html"><li><i class="fab fa-playstation"></i>Playstation 5</li></a>
-      <a href="productoverzicht2.html"><li><i class="fab fa-playstation"></i>Playstation 4</li></a>
+      <a href="productoverzicht2.html">
+        <li><i class="fab fa-playstation"></i>Playstation 5</li>
+      </a>
+      <a href="productoverzicht2.html">
+        <li><i class="fab fa-playstation"></i>Playstation 4</li>
+      </a>
       <p>XBOX GAMES</p>
-      <a href=""><li><i class="fab fa-xbox"></i>Xbox One</li></a>
-      <a href=""><li><i class="fab fa-xbox"></i>Xbox Series X/S</li></a>
+      <a href="">
+        <li><i class="fab fa-xbox"></i>Xbox One</li>
+      </a>
+      <a href="">
+        <li><i class="fab fa-xbox"></i>Xbox Series X/S</li>
+      </a>
     </ul>
   </div>
 
-    <header class="header">
-      <a href="Homepagina.html" class="logo"><img src="img/wepik-green-blue-and-yellow-gaming-logo-20230523111243ZQWB.webp" /></a>
-      <nav class="navbar">
-        <p class="menu-icon">Alle categorieen</p>
-        <section class="searchBar">
-          <input type="text" placeholder="Wat zoek je?" class="searchBar__input" />
-          <i class="fa-solid fa-magnifying-glass searchBar__glass"></i>
-        </section>
-        <span class="user-login">
-          <i class="fas fa-user"></i>
-        </span>
-        <span class="user-login-icon">
-          <i class="fas fa-shopping-cart"></i>
-        </span>
-      </nav>
-    </header>
-
-    <h1><i class="fab fa-steam"></i>Steam Games</h1>
-    
-    <main>
-     <p class="filt">Filteren  <i class="fas fa-filter"></i></p>
-      <section class="inputs">
-        <div>
-          <input id="checkbox-soulslike" type="checkbox" class="filter" />
-          <label for="checkbox-soulslike" class="label">Soulslike</label>
-        </div>
-
-        <div>
-          <input id="checkbox-rpg" type="checkbox" class="filter" />
-          <label for="checkbox-rpg" class="label">RPG</label>
-        </div>
-
-        <div>
-          <input id="checkbox-action" type="checkbox" class="filter" />
-          <label for="checkbox-action" class="label">Action</label>
-        </div>
+  <header class="header">
+    <a href="Homepagina.html" class="logo"><img
+        src="img/wepik-green-blue-and-yellow-gaming-logo-20230523111243ZQWB.webp" /></a>
+    <nav class="navbar">
+      <p class="menu-icon">Alle categorieen</p>
+      <section class="searchBar">
+        <input type="text" placeholder="Wat zoek je?" class="searchBar__input" />
+        <i class="fa-solid fa-magnifying-glass searchBar__glass"></i>
       </section>
-      <ul class="games">
-        <li data-category="soulslike" data-title="IRONMAN-MARVEL" class="games__game game">
-            <figure class="games__figure">
-              <img src="img/demon-s-souls-remake-edition-remake-edition-pc-spel-cover.webp" alt="Pandora sieraad van Ironman - Marvel"
-                class="games__img" />
-            </figure>
-            <section class="games__body">
-              <s>€70</s>
-              <h2 class="games__h2">€65.99</h2>
-              <h3 class="games__h3">Demon's Souls Remake</h3>
-              <div class="games__stars">★★★★★</div>
-              <button data-product="ironman" class="games__button">
-                Add to Cart
-              </button>
-            </section>
-          </li>
-        <li data-category="rpg" data-title="IRONMAN-MARVEL" class="games__game game">
-            <figure class="games__figure">
-              <img src="img/the-witcher-3-wild-hunt-pc-spel-gog-com-cover.webp" alt="Pandora sieraad van Ironman - Marvel"
-                class="games__img" />
-            </figure>
-            <section class="games__body">
-              <s>€50</s>
-              <h2 class="games__h2">€11.49</h2>
-              <h3 class="games__h3">The Witcher 3: Wild Hunt</h3>
-              <div class="games__stars">★★★★★</div>
-              <button data-product="ironman" class="games__button">
-                Add to Cart
-              </button>
-            </section>
-          </li>
-        <li data-category="action" data-title="IRONMAN-MARVEL" class="games__game game">
-            <figure class="games__figure">
-              <img src="img/resident-evil-4-pc-spel-steam-europe-cover.webp" alt="Pandora sieraad van Ironman - Marvel"
-                class="games__img" />
-            </figure>
-            <section class="games__body">
-              <s>€59</s>
-              <h2 class="games__h2">€40.99</h2>
-              <h3 class="games__h3">Resident Evil 4 Remake</h3>
-              <div class="games__stars">★★★★★</div>
-              <button data-product="ironman" class="games__button">
-                Add to Cart
-              </button>
-            </section>
-          </li>
-          <li data-category="rpg" data-title="IRONMAN-MARVEL" class="games__game game">
-            <figure class="games__figure">
-              <img src="img/star-wars-jedi-survivor-pc-spel-origin-cover.webp" alt="Pandora sieraad van Ironman - Marvel"
-                class="games__img" />
-            </figure>
-            <section class="games__body">
-              <s>€70</s>
-              <h2 class="games__h2">€46.10</h2>
-              <h3 class="games__h3">Star Wars Jedi: Survivor</h3>
-              <div class="games__stars">★★★★★</div>
-              <button data-product="ironman" class="games__button">
-                Add to Cart
-              </button>
-            </section>
-          </li>
-        <li data-category="soulslike" data-title="STARWARSDarthVaderCharm" class="games__game game">
-            <figure class="games__figure">
-              <a href="product1.html"><img src="img/elden-ring-pc-spel-steam-europe-cover.webp"
-                  alt="Pandora sieraad van C3PO - Star Wars" class="games__img"></a>
-            </figure>
-            <section class="games__body">
-              <s>€70</s>
-              <h2 class="games__h2">€52.65</h2>
-              <h3 class="games__h3">Elden Ring</h3>
-              <div class="games__stars">★★★★★</div>
-              <button data-product="darth" class="games__button">
-                Add to Cart
-              </button>
-            </section>
-          </li>
+      <span class="user-login">
+        <i class="fas fa-user"></i>
+      </span>
+      <span id="js--checkoutButton" class="shoppingCart">
+        <i class="fas fa-shopping-cart"></i>
+        <div class="shoppingCart__message">0</div>
+      </span>
+    </nav>
+  </header>
 
-          <li data-category="rpg" data-title="IRONMAN-MARVEL" class="games__game game">
-            <figure class="games__figure">
-              <img src="img/hogwarts-legacy-pc-spel-steam-europe-cover.webp" alt="Pandora sieraad van Ironman - Marvel"
-                class="games__img" />
-            </figure>
-            <section class="games__body">
-              <s>€60</s>
-              <h2 class="games__h2">€47.15</h2>
-              <h3 class="games__h3">Hogwarts Legacy</h3>
-              <div class="games__stars">★★★★★</div>
-              <button data-product="ironman" class="games__button">
-                Add to Cart
-              </button>
-            </section>
-          </li>
-          
-          <li data-category="action" data-title="STARWARSDarthVaderCharm" class="games__game game">
-            <figure class="games__figure">
-              <a href="product2.html"><img src="img/street-fighter-6-pc-spel-steam-cover.webp"
-                  alt="Pandora sieraad van C3PO - Star Wars" class="games__img"></a>
-            </figure>
-            <section class="games__body">
-              <s>€59</s>
-              <h2 class="games__h2">€50.99</h2>
-              <h3 class="games__h3">Street Fighter 6</h3>
-              <div class="games__stars">★★★★★</div>
-              <button data-product="darth" class="games__button">
-                Add to Cart
-              </button>
-            </section>
-          </li>
-          <li data-category="soulslike" data-title="STARWARSDarthVaderCharm" class="games__game game">
-            <figure class="games__figure">
-              <a href="product1.html"><img src="img/sekiro-shadows-die-twice-goty-edition-goty-edition-pc-spel-steam-europe-cover.webp"
-                  alt="Pandora sieraad van C3PO - Star Wars" class="games__img"></a>
-            </figure>
-            <section class="games__body">
-              <s>€60</s>
-              <h2 class="games__h2">€33.33</h2>
-              <h3 class="games__h3">Sekiro: Shadows Die Twice</h3>
-              <div class="games__stars">★★★★★</div>
-              <button data-product="darth" class="games__button">
-                Add to Cart
-              </button>
-            </section>
-          </li>
-          <li data-category="action" data-title="STARWARSDarthVaderCharm" class="games__game game">
-            <figure class="games__figure">
-              <img src="img/mortal-kombat-1-pc-spel-steam-europe-cover.webp" alt="Pandora sieraad van C3PO - Star Wars"
-                class="games__img" />
-            </figure>
-            <section class="games__body">
-              <s>€70</s>
-              <h2 class="games__h2">€57.49</h2>
-              <h3 class="games__h3">Mortal Kombat 1</h3>
-              <div class="games__stars">★★★★★</div>
-              <button data-product="darth" class="games__button">
-                Add to Cart
-              </button>
-          </li>
-          <li data-category="soulslike" data-title="STARWARSDarthVaderCharm" class="games__game game">
-            <figure class="games__figure">
-              <a href="product1.html"><img src="img/lies-of-p-pc-spel-steam-cover.webp"
-                  alt="Pandora sieraad van C3PO - Star Wars" class="games__img"></a>
-            </figure>
-            <section class="games__body">
-              <s>€70</s>
-              <h2 class="games__h2">€60.19</h2>
-              <h3 class="games__h3">Lies Of P</h3>
-              <div class="games__stars">★★★★★</div>
-              <button data-product="darth" class="games__button">
-                Add to Cart
-              </button>
-            </section>
-          </li>
-          <li data-category="action" data-title="STARWARSDarthVaderCharm" class="games__game game">
-            <figure class="games__figure">
-              <img src="img/marvel-s-spider-man-miles-morales-pc-spel-steam-cover.webp" alt="Pandora sieraad van C3PO - Star Wars"
-                class="games__img" />
-            </figure>
-            <section class="games__body">
-              <s>€50</s>
-              <h2 class="games__h2">€29.89</h2>
-              <h3 class="games__h3">Marvels Spider-Man: Miles Morales</h3>
-              <div class="games__stars">★★★★★</div>
-              <button data-product="darth" class="games__button">
-                Add to Cart
-              </button>
-          </li>
-        
-      </ul>
-    </main>
-    <footer>
-      <div class="main-content">
-        <div class="left box">
-          <h2>Services</h2>
-          <div class="content">
-            <a href="https://www.instant-gaming.com/nl/voorwaarden/">Voorwaarden</a>
-            <a href="https://www.instant-gaming.com/nl/veelgestelde-vragen/">FAQ</a>
-            <a href="https://nl.trustpilot.com/review/instant-gaming.com"> <img src="img/7424355_trustpilot_icon.webp"
-                alt=""> </a>
-            <div class="social">
-              <a href="https://www.facebook.com/Instant.Gaming"><span class="fab fa-facebook-f"></span></a>
-              <a href="https://twitter.com/InstantGamingEN"><span class="fab fa-twitter"></span></a>
-              <a href="instagram.com/instantgamingen/"><span class="fab fa-instagram"></span></a>
-              <a href="https://www.youtube.com/channel/UCJ4IjxQrCVSunrWIknciNNg"><span class="fab fa-youtube"></span></a>
-            </div>
+  <main>
+    <h1><i class="fab fa-steam"></i>Steam Games</h1>
+    <p class="filt">Filteren <i class="fas fa-filter"></i></p>
+    <section class="inputs">
+      <div>
+        <input id="checkbox-soulslike" type="checkbox" class="filter" />
+        <label for="checkbox-soulslike" class="label">Soulslike</label>
+      </div>
+
+      <div>
+        <input id="checkbox-rpg" type="checkbox" class="filter" />
+        <label for="checkbox-rpg" class="label">RPG</label>
+      </div>
+
+      <div>
+        <input id="checkbox-action" type="checkbox" class="filter" />
+        <label for="checkbox-action" class="label">Action</label>
+      </div>
+    </section>
+    <ul class="games">
+      <li data-category="soulslike" data-title="IRONMAN-MARVEL" class="games__game game">
+        <figure class="games__figure">
+          <img src="img/demon-s-souls-remake-edition-remake-edition-pc-spel-cover.webp"
+            alt="Pandora sieraad van Ironman - Marvel" class="games__img" />
+        </figure>
+        <section class="games__body">
+          <s>€70</s>
+          <h2 class="games__h2">€65.99</h2>
+          <h3 class="games__h3">Demon's Souls Remake</h3>
+          <div class="games__stars">★★★★★</div>
+          <button data-product="ironman" class="games__button">
+            Add to Cart
+          </button>
+        </section>
+      </li>
+      <li data-category="rpg" data-title="IRONMAN-MARVEL" class="games__game game">
+        <figure class="games__figure">
+          <img src="img/the-witcher-3-wild-hunt-pc-spel-gog-com-cover.webp" alt="Pandora sieraad van Ironman - Marvel"
+            class="games__img" />
+        </figure>
+        <section class="games__body">
+          <s>€50</s>
+          <h2 class="games__h2">€11.49</h2>
+          <h3 class="games__h3">The Witcher 3: Wild Hunt</h3>
+          <div class="games__stars">★★★★★</div>
+          <button data-product="ironman" class="games__button">
+            Add to Cart
+          </button>
+        </section>
+      </li>
+      <li data-category="action" data-title="RESIDENT-EVIL" class="games__game game">
+        <figure class="games__figure">
+          <img src="img/resident-evil-4-pc-spel-steam-europe-cover.webp" alt="Pandora sieraad van Ironman - Marvel"
+            class="games__img" />
+        </figure>
+        <section class="games__body">
+          <s>€59</s>
+          <h2 class="games__h2">€40.99</h2>
+          <h3 class="games__h3">Resident Evil 4 Remake</h3>
+          <div class="games__stars">★★★★★</div>
+          <button data-product="resident" class="games__button">
+            Add to Cart
+          </button>
+        </section>
+      </li>
+      <li data-category="rpg" data-title="STARWARS-JEDI-SURVIVOR" class="games__game game">
+        <figure class="games__figure">
+          <img src="img/star-wars-jedi-survivor-pc-spel-origin-cover.webp" alt="Pandora sieraad van Ironman - Marvel"
+            class="games__img" />
+        </figure>
+        <section class="games__body">
+          <s>€70</s>
+          <h2 class="games__h2">€46.10</h2>
+          <h3 class="games__h3">Star Wars Jedi: Survivor</h3>
+          <div class="games__stars">★★★★★</div>
+          <button data-product="star" class="games__button">
+            Add to Cart
+          </button>
+        </section>
+      </li>
+      <li data-category="soulslike" data-title="ELDEN-RING" class="games__game game">
+        <figure class="games__figure">
+          <a href="product1.html"><img src="img/elden-ring-pc-spel-steam-europe-cover.webp"
+              alt="Pandora sieraad van C3PO - Star Wars" class="games__img"></a>
+        </figure>
+        <section class="games__body">
+          <s>€70</s>
+          <h2 class="games__h2">€52.65</h2>
+          <h3 class="games__h3">Elden Ring</h3>
+          <div class="games__stars">★★★★★</div>
+          <button data-product="elden" class="games__button">
+            Add to Cart
+          </button>
+        </section>
+      </li>
+
+      <li data-category="rpg" data-title="HOGWARTS-LEGACY" class="games__game game">
+        <figure class="games__figure">
+          <img src="img/hogwarts-legacy-pc-spel-steam-europe-cover.webp" alt="Pandora sieraad van Ironman - Marvel"
+            class="games__img" />
+        </figure>
+        <section class="games__body">
+          <s>€60</s>
+          <h2 class="games__h2">€47.15</h2>
+          <h3 class="games__h3">Hogwarts Legacy</h3>
+          <div class="games__stars">★★★★★</div>
+          <button data-product="hogwarts" class="games__button">
+            Add to Cart
+          </button>
+        </section>
+      </li>
+
+      <li data-category="action" data-title="STREET-FIGHTER6" class="games__game game">
+        <figure class="games__figure">
+          <a href="product2.html"><img src="img/street-fighter-6-pc-spel-steam-cover.webp"
+              alt="Pandora sieraad van C3PO - Star Wars" class="games__img"></a>
+        </figure>
+        <section class="games__body">
+          <s>€59</s>
+          <h2 class="games__h2">€50.99</h2>
+          <h3 class="games__h3">Street Fighter 6</h3>
+          <div class="games__stars">★★★★★</div>
+          <button data-product="street" class="games__button">
+            Add to Cart
+          </button>
+        </section>
+      </li>
+      <li data-category="soulslike" data-title="STARWARSDarthVaderCharm" class="games__game game">
+        <figure class="games__figure">
+          <a href="product1.html"><img
+              src="img/sekiro-shadows-die-twice-goty-edition-goty-edition-pc-spel-steam-europe-cover.webp"
+              alt="Pandora sieraad van C3PO - Star Wars" class="games__img"></a>
+        </figure>
+        <section class="games__body">
+          <s>€60</s>
+          <h2 class="games__h2">€33.33</h2>
+          <h3 class="games__h3">Sekiro: Shadows Die Twice</h3>
+          <div class="games__stars">★★★★★</div>
+          <button data-product="darth" class="games__button">
+            Add to Cart
+          </button>
+        </section>
+      </li>
+      <li data-category="action" data-title="MORTAL" class="games__game game">
+        <figure class="games__figure">
+          <img src="img/mortal-kombat-1-pc-spel-steam-europe-cover.webp" alt="Pandora sieraad van C3PO - Star Wars"
+            class="games__img" />
+        </figure>
+        <section class="games__body">
+          <s>€70</s>
+          <h2 class="games__h2">€57.49</h2>
+          <h3 class="games__h3">Mortal Kombat 1</h3>
+          <div class="games__stars">★★★★★</div>
+          <button data-product="mortal" class="games__button">
+            Add to Cart
+          </button>
+      </li>
+      <li data-category="soulslike" data-title="STARWARSDarthVaderCharm" class="games__game game">
+        <figure class="games__figure">
+          <a href="product1.html"><img src="img/lies-of-p-pc-spel-steam-cover.webp"
+              alt="Pandora sieraad van C3PO - Star Wars" class="games__img"></a>
+        </figure>
+        <section class="games__body">
+          <s>€70</s>
+          <h2 class="games__h2">€60.19</h2>
+          <h3 class="games__h3">Lies Of P</h3>
+          <div class="games__stars">★★★★★</div>
+          <button data-product="darth" class="games__button">
+            Add to Cart
+          </button>
+        </section>
+      </li>
+      <li data-category="action" data-title="STARWARSDarthVaderCharm" class="games__game game">
+        <figure class="games__figure">
+          <img src="img/marvel-s-spider-man-miles-morales-pc-spel-steam-cover.webp"
+            alt="Pandora sieraad van C3PO - Star Wars" class="games__img" />
+        </figure>
+        <section class="games__body">
+          <s>€50</s>
+          <h2 class="games__h2">€29.89</h2>
+          <h3 class="games__h3">Marvels Spider-Man: Miles Morales</h3>
+          <div class="games__stars">★★★★★</div>
+          <button data-product="darth" class="games__button">
+            Add to Cart
+          </button>
+      </li>
+
+    </ul>
+  </main>
+  <footer>
+    <div class="main-content">
+      <div class="left box">
+        <h2>Services</h2>
+        <div class="content">
+          <a href="https://www.instant-gaming.com/nl/voorwaarden/">Voorwaarden</a>
+          <a href="https://www.instant-gaming.com/nl/veelgestelde-vragen/">FAQ</a>
+          <a href="https://nl.trustpilot.com/review/instant-gaming.com"> <img src="img/7424355_trustpilot_icon.webp"
+              alt=""> </a>
+          <div class="social">
+            <a href="https://www.facebook.com/Instant.Gaming"><span class="fab fa-facebook-f"></span></a>
+            <a href="https://twitter.com/InstantGamingEN"><span class="fab fa-twitter"></span></a>
+            <a href="instagram.com/instantgamingen/"><span class="fab fa-instagram"></span></a>
+            <a href="https://www.youtube.com/channel/UCJ4IjxQrCVSunrWIknciNNg"><span class="fab fa-youtube"></span></a>
           </div>
         </div>
-        <div class="center box">
-          <h2>Contact</h2>
-          <div class="content">
-            <div class="place">
-              <span class="text">Betaal met </span>
-              <span class="fab fa-cc-visa"></span>
-              <span class="fab fa-ideal"></span>
-              <span class="fab fa-paypal"></span>
-            </div>
-            <div class="phone">
-              <span class="fas fa-mobile-alt"></span>
-              <span class="text">+31600000000</span>
-            </div>
-            <div class="email">
-              <span class="fas fa-envelope"></span>
-              <span class="text">35801@ma-web.nl</span>
-            </div>
+      </div>
+      <div class="center box">
+        <h2>Contact</h2>
+        <div class="content">
+          <div class="place">
+            <span class="text">Betaal met </span>
+            <span class="fab fa-cc-visa"></span>
+            <span class="fab fa-ideal"></span>
+            <span class="fab fa-paypal"></span>
+          </div>
+          <div class="phone">
+            <span class="fas fa-mobile-alt"></span>
+            <span class="text">+31600000000</span>
+          </div>
+          <div class="email">
+            <span class="fas fa-envelope"></span>
+            <span class="text">35801@ma-web.nl</span>
           </div>
         </div>
-    </footer>
-  </body>
+      </div>
+  </footer>
+</body>
+
 </html>

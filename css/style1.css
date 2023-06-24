@@ -48,7 +48,7 @@ body::after {
 }
 
 h1 {
-  padding: 2rem 0rem 0rem 8rem;
+  margin-bottom: 5rem;
 }
 
 select {
@@ -96,6 +96,119 @@ main {
   align-items: center;
   position: absolute;
   top: 1.3rem;
+}
+
+/*shoppingCart*/
+
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.checkout {
+  padding: 2rem;
+  width: 80%;
+  height: 100%;
+  background: var(--game--background--color);
+  display: none;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.checkout__list {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(3.5, 30rem 20rem);
+}
+
+.checkout__listItem {
+  list-style: none;
+  grid-row: span 2;
+  border-bottom: 0.3rem solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkout__image {
+  height: 50%;
+  width: 50%;
+  object-fit: contain;
+}
+
+.modal {
+  width: 50rem;
+  height: 30rem;
+  position: absolute;
+  position: fixed;
+  top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f6f6;
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.3);
+  color: green;
+  font-size: 130%;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  left: 34%;
+  display: none;
+  z-index: 1;
+}
+
+.shoppingCart {
+  position: relative;
+  color: black;
+  border: 2px solid black;
+  background-color: var(--game--background--color);
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.fa-arrow-left {
+  position: fixed;
+  padding: 3rem;
+  cursor: pointer;
+  color: black;
+  background: red;
+  border-radius: 50%;
+}
+
+.shoppingCart:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.shoppingCart__message {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: -1rem;
+  left: 5.4rem;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.fa-arrow-left {
+  display: none;
+}
+
+.fa-cart-shopping {
+  display: inline-block;
+}
+
+.a-popup {
+  animation-name: popup;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /*nav bar*/
