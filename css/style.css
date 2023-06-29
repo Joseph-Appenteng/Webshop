@@ -19,6 +19,7 @@ html {
 
 main {
   width: 100%;
+  height: 100%;
   opacity: 0;
   animation-fill-mode: forwards;
   animation-name: fadeIn;
@@ -173,6 +174,28 @@ h3 {
   animation-duration: 0.8s;
   animation-fill-mode: both;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.checkout__total {
+  position: absolute;
+  left: 110rem;
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+.check {
+  padding: 1rem;
+  font-size: 2rem;
+  background: white;
+  cursor: pointer;
+  border-radius: 2rem;
+  position: absolute;
+  margin-top: 2rem;
+  left: 95rem;
+}
+
+.check:hover {
+  color: red;
+  background: lightgray;
 }
 
 /*nav bar*/
@@ -616,7 +639,6 @@ li[data-title="MORTAL=KOMBAT1"]:nth-child(6) {
   height: 100%;
   gap: 2rem;
   width: 80%;
-  flex-wrap: wrap;
 }
 
 .arrow:hover {
@@ -691,6 +713,7 @@ li[data-title="MORTAL=KOMBAT1"]:nth-child(6) {
 
 footer {
   position: relative;
+  margin-top: 10rem;
   bottom: 0px;
   width: 100%;
   background-color: rgb(227, 227, 227);
@@ -806,6 +829,7 @@ footer {
   padding-left: 10px;
   color: black;
 }
+
 h2,
 a {
   color: black;
@@ -839,10 +863,6 @@ a {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.single-product {
-  margin-top: 0rem;
 }
 
 .col-2 img {
@@ -990,13 +1010,233 @@ h3 {
   }
 }
 
+@media screen and (max-width: 81.25rem) {
+  /*product1*/
+
+  .small-container {
+    margin-left: 8rem;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    background: var(--color-grey);
+  }
+
+  .games__star {
+    margin-left: 3rem;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+  }
+
+  .col-2 img {
+    max-width: 100%;
+    padding: 0rem 0;
+  }
+
+  .single-product .col-2 {
+    padding: 1rem;
+  }
+
+  .col-2 {
+    flex-basis: 30%;
+    min-width: 20rem;
+    margin-left: 10rem;
+  }
+
+  .col-2 h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    margin: 3rem;
+  }
+
+  .single-product select {
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    background: var(--color-grey);
+    margin-left: 3rem;
+  }
+
+  .single-product h4,
+  s {
+    margin-left: 3rem;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  .bta {
+    text-decoration: none;
+    background: black;
+    color: white;
+    padding: 0.8rem 3rem;
+    margin: 2rem;
+    border-radius: 10%;
+    margin-right: 1rem;
+  }
+
+  .col-2 p {
+    margin-left: 3rem;
+    margin-top: 1rem;
+  }
+
+  .col-2 h3 {
+    margin-top: 4rem;
+  }
+
+  .product_h,
+  .product_p {
+    margin-left: 8rem;
+  }
+
+  .product_p {
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
+  .cart-icon {
+    background: var(--color-red);
+    padding: 0.8rem 3rem;
+    border-radius: 10%;
+    margin-left: 0;
+  }
+
+  .cart-icon:hover {
+    cursor: pointer;
+    background: grey;
+  }
+
+  .specs-container {
+    display: flex;
+  }
+
+  .specs-group {
+    flex: 1;
+    margin-right: 0px;
+  }
+
+  .specs {
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+    gap: 5rem;
+    margin: 2rem;
+  }
+
+  .specs h1,
+  h3 {
+    font-size: 3rem;
+  }
+
+  .deluxe h1,
+  .deluxe2 h1,
+  .ultimate h1 {
+    font-size: 2rem;
+    margin: 0;
+    margin-left: 8rem;
+  }
+  .searchBar__input {
+    width: 40rem;
+  }
+
+  .searchBar__glass {
+    width: 6rem;
+    height: 2rem;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1.3rem;
+  }
+
+  /*nav bar*/
+
+  .header {
+    width: 124.6rem;
+  }
+
+  .logo img {
+    width: 25rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+  }
+
+  /*sidemenu popup*/
+
+  .container {
+    height: 200%;
+    transform: translateX(-76.4rem);
+  }
+
+  /*hero section*/
+
+  .home {
+    width: 124.6rem;
+  }
+  /*top trending*/
+  .games {
+    gap: 6rem;
+  }
+
+  .games__figure {
+    width: 90%;
+    height: 60%;
+  }
+
+  .games__img {
+    width: 140%;
+  }
+
+  .arrow-game-right {
+    left: 114rem;
+  }
+
+  /*Game promote section*/
+  .hero_section {
+    width: 124.6rem;
+  }
+
+  .deal {
+    width: 115rem;
+  }
+
+  /*review*/
+  .review {
+    width: 40rem;
+    min-height: 40rem;
+  }
+
+  /*footer*/
+
+  footer {
+    width: 124.6rem;
+  }
+}
+
+@media screen and (max-width: 69rem) {
+  .arrow {
+    display: none;
+  }
+
+  .review {
+    width: 70rem;
+    min-height: 40rem;
+  }
+
+  .reviews {
+    margin-left: 25rem;
+  }
+}
+
 @media screen and (max-width: 62.5rem) {
   .checkout {
-    width: 100%;
+    width: 100rem;
   }
 
   .checkout__list {
-    grid-template-rows: repeat(3, 40rem 25rem);
+    margin-top: 4rem;
+    margin-left: 8rem;
+    grid-template-rows: repeat(2, 40rem 25rem);
   }
 
   .checkout__listItem {
@@ -1010,89 +1250,175 @@ h3 {
     height: 40%;
     width: 100%;
   }
+
+  .checkout__list p {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 7rem;
+    align-items: center;
+  }
   .a-popup {
     animation-name: "broken";
     animation-duration: 0s;
   }
 }
 
-@media screen and (max-width: 81.25rem) {
+@media screen and (max-width: 45.8125rem) {
+  /*searchbar*/
+
   .searchBar {
-    position: relative;
+    margin-left: 0;
   }
 
   .searchBar__input {
-    border: none;
-    width: 120%;
-    padding: 1rem;
+    width: 50rem;
+    height: 7rem;
+    font-size: 3rem;
     padding-left: 5rem;
   }
 
   .searchBar__glass {
-    width: 6rem;
-    height: 2rem;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 1.3rem;
+    top: 2.3rem;
   }
 
-  .container {
-    height: 200%;
-    width: 60rem;
-    transition: 0.5s ease;
-    top: -4rem;
-    transform: translateX(-77.6rem);
+  /*nav bar*/
+  .menu-icon {
+    display: none;
+  }
+
+  /*sidemenu popup*/
+  .container ul {
+    width: 100%;
+    list-style: none;
+  }
+
+  .container ul li {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .container ul p {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-left: 8rem;
+    text-decoration: none;
+    cursor: default;
+  }
+
+  .container span {
+    top: 4rem;
+    font-size: 3rem;
   }
 
   /*nav bar*/
 
   .header {
-    width: 124.8rem;
+    width: 124.6rem;
+    height: 15rem;
   }
+
+  .logo img {
+    margin-top: 3rem;
+    width: 35rem;
+    margin-left: 7rem;
+  }
+
+  .user-login-icon,
   .user-login {
-    margin-left: 6rem;
-    padding: 1.5rem;
+    font-size: 4rem;
   }
 
-  .user-login-icon {
-    border-radius: 50%;
-    padding: 1.5rem;
+  .shoppingCart {
+    font-size: 4rem;
   }
 
-  .menu-icon {
-    position: relative;
-    left: -0.1rem;
-    font-size: 1.8rem;
+  .shoppingCart__message {
+    width: 5rem;
+    height: 5rem;
+    top: -2rem;
+    left: 6.7rem;
   }
 
-  .container span {
-    position: absolute;
-    right: -61rem;
-    top: 6.6rem;
-  }
+  /*sidemenu popup*/
 
-  .container ul p {
+  .container ul li {
     font-size: 3rem;
   }
 
-  .container ul li,
-  .container ul li a {
-    font-size: 2rem;
+  .container ul p {
+    font-size: 4rem;
+  }
+
+  .container ul a li i {
+    margin-right: 2rem;
+  }
+
+  .container {
+    height: 300%;
+    transform: translateX(-105rem);
+  }
+
+  .reviews {
+    width: 70rem;
+    margin-left: 20rem;
+    flex-wrap: wrap;
+  }
+
+  .review p {
+    font-size: 100%;
   }
 
   .home {
-    width: 125rem;
+    height: 70rem;
   }
 
   .home .home-bg h1 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 
-  .home .home-bg p,
+  .home .home-bg p {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
   .btn {
-    font-size: 1.7rem;
-    margin-bottom: 2rem;
+    font-size: 3rem;
+    padding: 1rem 2rem;
+  }
+
+  .hero_section p {
+    font-size: 3rem;
+  }
+
+  .hero_section button,
+  .traingle i {
+    font-size: 3rem;
+  }
+
+  .launch-time div p {
+    font-size: 4rem;
+  }
+
+  .discount,
+  .amount {
+    font-size: 3rem;
+  }
+
+  .launch-time span {
+    font-size: 2.2rem;
+  }
+
+  .box h2 {
+    font-size: 4rem;
+  }
+
+  .content a {
+    font-size: 3rem;
+  }
+
+  .center .content .text {
+    font-size: 3rem;
   }
 }

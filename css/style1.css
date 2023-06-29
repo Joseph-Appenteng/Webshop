@@ -645,3 +645,292 @@ a {
     filter: blur(0px);
   }
 }
+
+@media screen and (max-width: 62.5rem) {
+  .checkout {
+    width: 100rem;
+  }
+
+  .checkout__list {
+    margin-top: 4rem;
+    margin-left: 8rem;
+    grid-template-rows: repeat(2, 40rem 25rem);
+  }
+
+  .checkout__listItem {
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+  }
+
+  .checkout__image {
+    height: 40%;
+    width: 100%;
+  }
+
+  .checkout__list p {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 7rem;
+    align-items: center;
+  }
+  .a-popup {
+    animation-name: "broken";
+    animation-duration: 0s;
+  }
+}
+
+@media screen and (max-width: 81.25rem) {
+  .searchBar__input {
+    width: 40rem;
+  }
+
+  .searchBar__glass {
+    width: 6rem;
+    height: 2rem;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1.3rem;
+  }
+
+  /*nav bar*/
+
+  .header {
+    width: 124.6rem;
+  }
+
+  .logo img {
+    width: 25rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+  }
+
+  /*sidemenu popup*/
+
+  .container {
+    height: 200%;
+    transform: translateX(-76.4rem);
+  }
+
+  /*hero section*/
+
+  .home {
+    width: 124.6rem;
+  }
+  /*top trending*/
+  .games {
+    gap: 6rem;
+  }
+
+  .games__figure {
+    width: 90%;
+    height: 60%;
+  }
+
+  .games__img {
+    width: 140%;
+  }
+
+  .arrow-game-right {
+    left: 114rem;
+  }
+
+  /*Game promote section*/
+  .hero_section {
+    width: 124.6rem;
+  }
+
+  .deal {
+    width: 115rem;
+  }
+
+  /*review*/
+  .review {
+    width: 40rem;
+    min-height: 40rem;
+  }
+
+  /*footer*/
+
+  footer {
+    width: 124.6rem;
+  }
+}
+
+@media screen and (max-width: 69rem) {
+  .arrow {
+    display: none;
+  }
+
+  .review {
+    width: 70rem;
+    min-height: 40rem;
+  }
+
+  .reviews {
+    margin-left: 25rem;
+  }
+}
+
+@media screen and (max-width: 45.8125rem) {
+  /*searchbar*/
+
+  .searchBar {
+    margin-left: 0;
+  }
+
+  .searchBar__input {
+    width: 50rem;
+    height: 7rem;
+    font-size: 3rem;
+    padding-left: 5rem;
+  }
+
+  .searchBar__glass {
+    top: 2.3rem;
+  }
+
+  /*nav bar*/
+  .menu-icon {
+    display: none;
+  }
+
+  /*sidemenu popup*/
+  .container ul {
+    width: 100%;
+    list-style: none;
+  }
+
+  .container ul li {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .container ul p {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-left: 8rem;
+    text-decoration: none;
+    cursor: default;
+  }
+
+  .container span {
+    top: 4rem;
+    font-size: 3rem;
+  }
+
+  /*nav bar*/
+
+  .header {
+    width: 124.6rem;
+    height: 15rem;
+  }
+
+  .logo img {
+    margin-top: 3rem;
+    width: 35rem;
+    margin-left: 7rem;
+  }
+
+  .user-login-icon,
+  .user-login {
+    font-size: 4rem;
+  }
+
+  .shoppingCart {
+    font-size: 4rem;
+  }
+
+  .shoppingCart__message {
+    width: 5rem;
+    height: 5rem;
+    top: -2rem;
+    left: 6.7rem;
+  }
+
+  /*sidemenu popup*/
+
+  .container ul li {
+    font-size: 3rem;
+  }
+
+  .container ul p {
+    font-size: 4rem;
+  }
+
+  .container ul a li i {
+    margin-right: 2rem;
+  }
+
+  .container {
+    height: 300%;
+    transform: translateX(-105rem);
+  }
+
+  .reviews {
+    width: 70rem;
+    margin-left: 20rem;
+    flex-wrap: wrap;
+  }
+
+  .review p {
+    font-size: 100%;
+  }
+
+  .home {
+    height: 70rem;
+  }
+
+  .home .home-bg h1 {
+    font-size: 4rem;
+  }
+
+  .home .home-bg p {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .btn {
+    font-size: 3rem;
+    padding: 1rem 2rem;
+  }
+
+  .hero_section p {
+    font-size: 3rem;
+  }
+
+  .hero_section button,
+  .traingle i {
+    font-size: 3rem;
+  }
+
+  .launch-time div p {
+    font-size: 4rem;
+  }
+
+  .discount,
+  .amount {
+    font-size: 3rem;
+  }
+
+  .launch-time span {
+    font-size: 2.2rem;
+  }
+
+  .box h2 {
+    font-size: 4rem;
+  }
+
+  .content a {
+    font-size: 3rem;
+  }
+
+  .center .content .text {
+    font-size: 3rem;
+  }
+}

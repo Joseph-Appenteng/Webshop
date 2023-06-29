@@ -5,6 +5,11 @@ window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
 
+// Zoeken naar de games-ul
+var gamesList = document.querySelector(".games");
+
+// Itereer over elk game-object en maak een li-element
+
 setInterval(function () {
   document.getElementsByTagName("body")[0].style.overflow = "auto";
 }, 1500);
@@ -228,3 +233,69 @@ function isPriceInRange(range, price) {
 
   return price >= minPrice && price <= maxPrice;
 }
+
+fetch("Js/main.json")
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonData) {
+    var gamesList = document.querySelector(".games");
+
+    jsonData.games.forEach(function (game) {
+      var li = document.createElement("li");
+      li.setAttribute("data-category", game.category);
+      li.setAttribute("data-title", game.title);
+      li.classList.add("games__game", "game");
+
+      var figure = document.createElement("figure");
+      figure.classList.add("games__figure");
+
+      var img = document.createElement("img");
+      img.src = game.image;
+      img.alt = "Pandora sieraad van Ironman - Marvel";
+      img.classList.add("games__img");
+
+      figure.appendChild(img);
+
+      var section = document.createElement("section");
+      section.classList.add("games__body");
+
+      var originalPrice = document.createElement("s");
+      originalPrice.textContent = game.price.original;
+
+      var discountedPrice = document.createElement("h2");
+      discountedPrice.classList.add("games__h2");
+      discountedPrice.textContent = game.price.discounted;
+
+      var gameName = document.createElement("h3");
+      gameName.classList.add("games__h3");
+      gameName.textContent = game.name;
+
+      var rating = document.createElement("div");
+      rating.classList.add("games__stars");
+      rating.textContent = game.rating;
+
+      var addButton = document.createElement("button");
+      addButton.setAttribute("data-product", game.title.toLowerCase());
+      addButton.classList.add("games__button");
+      addButton.textContent = game.button;
+
+      addButton.addEventListener("click", function () {
+        var product = this.getAttribute("data-product");
+        console.log("Added to cart:", product);
+      });
+
+      section.appendChild(originalPrice);
+      section.appendChild(discountedPrice);
+      section.appendChild(gameName);
+      section.appendChild(rating);
+      section.appendChild(addButton);
+      li.appendChild(figure);
+      li.appendChild(section);
+
+      gamesList.appendChild(li);
+    });
+  })
+  .catch(function (error) {
+    console.log("Error: " + error);
+  });

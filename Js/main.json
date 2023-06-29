@@ -26,19 +26,19 @@
       },
       {
         "category": "action",
-        "title": "IRONMAN-MARVEL",
+        "title": "RESIDENT-EVIL",
         "image": "img/resident-evil-4-pc-spel-steam-europe-cover.webp",
         "price": {
           "original": "€59",
           "discounted": "€40.99"
-        },
+        }, 
         "name": "Resident Evil 4 Remake",
         "rating": "★★★★★",
         "button": "Add to Cart"
       },
       {
         "category": "rpg",
-        "title": "IRONMAN-MARVEL",
+        "title": "STARWARS-JEDI-SURVIVOR",
         "image": "img/star-wars-jedi-survivor-pc-spel-origin-cover.webp",
         "price": {
           "original": "€70",
@@ -50,7 +50,7 @@
       },
       {
         "category": "soulslike",
-        "title": "STARWARSDarthVaderCharm",
+        "title": "ELDEN-RING",
         "image": "img/elden-ring-pc-spel-steam-europe-cover.webp",
         "price": {
           "original": "€70",
@@ -74,7 +74,7 @@
       },
       {
         "category": "action",
-        "title": "STARWARSDarthVaderCharm",
+        "title": "STREET-FIGHTER6",
         "image": "img/street-fighter-6-pc-spel-steam-cover.webp",
         "price": {
           "original": "€59",
